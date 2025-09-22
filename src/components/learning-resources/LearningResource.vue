@@ -1,0 +1,23 @@
+<template>
+    <li>
+        <div>
+            <header><h3>
+                {{ title }}
+            </h3></header>
+            <button>Delete</button>
+        </div>
+
+        <p>
+            {{ description }}
+        </p>
+        <nav>
+            <a :href="link">View resource</a>
+        </nav>
+    </li>
+</template>
+
+<script>
+export default{
+    props:['title','description','link']
+}
+</script>
